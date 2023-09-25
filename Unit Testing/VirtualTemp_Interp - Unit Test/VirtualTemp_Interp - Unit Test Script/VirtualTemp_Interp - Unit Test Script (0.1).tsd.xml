@@ -1,0 +1,3303 @@
+<TestScript>
+  <Information>
+    <Name>VirtualTemp_Interp - Unit Test Script</Name>
+    <Version>0.1</Version>
+    <Title>VirtualTemp_Interp - Unit Test Script</Title>
+    <Author>Gecia</Author>
+  </Information>
+  <Sequence>
+    <TestCase definesScope="False">
+      <Information>
+        <Title>VirtualTemp_Interp - Unit Test</Title>
+      </Information>
+      <Actions>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = 0</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">0</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set setpointsEnable = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set highALARM_degC = 165</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">165</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set highWarn_degC = 170</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">170</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarn_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set lowWarn_degC = 30</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">30</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarn_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set lowALARM_degC =35</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">35</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = 0</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">0</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 273.15</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">273.15</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = 32</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">32</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set setpointsEnable = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = 20</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">20</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = 20</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">20</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 293.15</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">293.15</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = 68</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">68</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = 25</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">25</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = 25</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">25</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 298.15</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">298.15</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = 77</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">77</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = 27</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">27</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = 28.0810814</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">28.0810814</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 301.231079</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">301.231079</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = 82.5459442</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">82.5459442</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = 31</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">31</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = 34.2432442</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">34.2432442</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 307.39325</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">307.39325</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = 93.63784</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">93.63784</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = 61</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">61</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = 80.45946</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">80.45946</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 353.609436</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">353.609436</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = 176.827026</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">176.827026</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = 62</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">62</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = 82</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">82</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 355.15</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">355.15</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = 179.6</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">179.6</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = 63</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">63</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = 82.9655151</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">82.9655151</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 356.1155</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">356.1155</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = 181.337921</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">181.337921</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = 90</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">90</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = 109.034485</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">109.034485</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 382.184479</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">382.184479</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = 228.26207</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">228.26207</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = 91</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">91</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = 110</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">110</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 383.15</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">383.15</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = 230</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">230</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = 92</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">92</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = 111.071426</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">111.071426</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 384.221436</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">384.221436</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = 231.928558</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">231.928558</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = 118</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">118</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = 138.928574</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">138.928574</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 412.078552</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">412.078552</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = 282.071442</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">282.071442</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = 119</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">119</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = 140</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">140</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 413.15</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">413.15</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = 284</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">284</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = 120</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">120</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = 141.032257</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">141.032257</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 414.182251</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">414.182251</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = 285.858063</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">285.858063</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = 145</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">145</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = 166.838715</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">166.838715</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 439.9887</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">439.9887</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = 332.3097</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">332.3097</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = 149</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">149</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = 170.967743</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">170.967743</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 444.117737</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">444.117737</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = 339.741943</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">339.741943</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set setpointsEnable = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = 150</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">150</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = 172</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">172</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 445.15</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">445.15</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = 341.6</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">341.6</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = 151</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">151</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = 173.032257</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">173.032257</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 446.182251</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">446.182251</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = 343.458069</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">343.458069</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = 200</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">200</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = 223.6129</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">223.6129</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 496.762878</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">496.762878</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = 434.503235</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">434.503235</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set refTemp_degC = -273</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-273</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.refTemp_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degC = -273</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">-273</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degK = 0.1499939</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">0.1499939</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check degF = -459.4</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">-459.4</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.degF</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.highWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_VirtualTemp.VirtualTemp_Interp_0.lowALARM</Entry>
+          </Configuration>
+        </Action>
+      </Actions>
+    </TestCase>
+  </Sequence>
+</TestScript>

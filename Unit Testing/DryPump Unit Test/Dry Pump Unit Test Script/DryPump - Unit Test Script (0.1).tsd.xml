@@ -1,0 +1,3978 @@
+<TestScript>
+  <Information>
+    <Name>DryPump - Unit Test Script</Name>
+    <Version>0.1</Version>
+    <Title>DryPump - Unit Test Script</Title>
+    <Author>Gecia</Author>
+  </Information>
+  <Sequence>
+    <TestCase definesScope="False">
+      <Information>
+        <Title>Check - run Command and speedSetpoint_hz</Title>
+      </Information>
+      <Actions>
+        <Action>
+          <Information>
+            <Title>Set xSTATUS01_IN_CONTROL_MODE_13 = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.xSTATUS01_IN_CONTROL_MODE_13</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set runCommand = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.runCommand</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check owCOMMNAD01 = 2</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">2</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.DPinverter0.owCOMMNAD01</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set xSTATUS01_NORMAL = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.xSTATUS01_NORMAL</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check running = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.running</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.running</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set runCommand = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.runCommand</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check owCOMMNAD01 = 1</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">1</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.DPinverter0.owCOMMNAD01</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set xSTATUS01_NORMAL = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.xSTATUS01_NORMAL</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check owCOMMNAD01 = 0</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">0</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.DPinverter0.owCOMMNAD01</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check running = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.running</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.running</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set speedSetpoint_Hz = 76.2939453</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">76.2939453</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.speedSetpoint_Hz</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check oQ15runSpeedSetting = 10000</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">10000</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.DPinverter0.oQ15runSpeedSetting</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set speedSetpoint_Hz = 0</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">0</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.speedSetpoint_Hz</Entry>
+          </Configuration>
+        </Action>
+      </Actions>
+    </TestCase>
+    <TestCase definesScope="False">
+      <Information>
+        <Title>Check - Output warning ALARM And normal</Title>
+      </Information>
+      <Actions>
+        <Action>
+          <Information>
+            <Title>Set xSTATUS01_NORMAL = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.xSTATUS01_NORMAL</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set xSTATUS02_WARNING = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.xSTATUS02_WARNING</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set xSTATUS02_WARNING = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.xSTATUS02_WARNING</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set xSTATUS02_ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.xSTATUS02_ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set xSTATUS02_ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.xSTATUS02_ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set TCSrefTemp.rawValue = 399</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">399</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.TCSrefTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set internalTemp.setpointsEnable = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.internalTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set TCSrefTemp.rawValue = 350</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">350</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.TCSrefTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set internalTemp.setpointsEnable = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.internalTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set TCSrefTemp.rawValue = 401</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">401</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.TCSrefTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set TCSrefTemp.rawValue = 1001</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">1001</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.TCSrefTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set TCSrefTemp.setpointsEnable = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.TCSrefTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set TCSrefTemp.rawValue = 999</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">999</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.TCSrefTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set TCSrefTemp.setpointsEnable = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.TCSrefTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set TCSrefTemp.rawValue = 1001</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">1001</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.TCSrefTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.rawValue = 1100</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">1100</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.endCoverTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.setpointsEnable = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.endCoverTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.rawValue = 900</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">900</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.endCoverTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.setpointsEnable = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.endCoverTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.rawValue = 1100</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">1100</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.endCoverTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set hvTemp_Temp2.rawValue = 1100</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">1100</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.hvTemp_Temp2.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set hvTemp_Temp2.setpointsEnable = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.hvTemp_Temp2.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set hvTemp_Temp2.rawValue = 900</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">900</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.hvTemp_Temp2.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set hvTemp_Temp2.setpointsEnable = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.hvTemp_Temp2.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set hvTemp_Temp2.rawValue = 1100</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">1100</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.hvTemp_Temp2.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set exhaustTemperature.rawValue = 1100</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">1100</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.exhaustTemperature.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set exhaustTemperature.setpointsEnable = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.exhaustTemperature.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set exhaustTemperature.rawValue = 900</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">900</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.exhaustTemperature.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set exhaustTemperature.setpointsEnable = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.exhaustTemperature.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set exhaustTemperature.rawValue = 1100</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">1100</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.exhaustTemperature.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set TCSrefTemp.rawValue = -274</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-274</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.TCSrefTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set internalTemp.setpointsEnable = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.internalTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set TCSrefTemp.rawValue = -272</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-272</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.TCSrefTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set internalTemp.setpointsEnable = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.internalTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set TCSrefTemp.rawValue = -274</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-274</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.TCSrefTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set TCSrefTemp.rawValue = -274</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-274</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.TCSrefTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set TCSrefTemp.setpointsEnable = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.TCSrefTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set TCSrefTemp.rawValue = -272</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-272</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.TCSrefTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set TCSrefTemp.setpointsEnable = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.TCSrefTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set TCSrefTemp.rawValue = -274</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-274</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.TCSrefTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.rawValue = -274</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-274</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.endCoverTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.setpointsEnable = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.endCoverTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.rawValue = -272</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-272</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.endCoverTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.setpointsEnable = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.endCoverTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.rawValue = -274</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-274</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.endCoverTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set hvTemp_Temp2.rawValue = -274</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-274</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.hvTemp_Temp2.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set hvTemp_Temp2.setpointsEnable = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.hvTemp_Temp2.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set hvTemp_Temp2.rawValue = -272</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-272</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.hvTemp_Temp2.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set hvTemp_Temp2.setpointsEnable = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.hvTemp_Temp2.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set hvTemp_Temp2.rawValue = -274</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-274</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.hvTemp_Temp2.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set exhaustTemperature.rawValue = -274</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-274</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.exhaustTemperature.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set exhaustTemperature.setpointsEnable = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.exhaustTemperature.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set exhaustTemperature.rawValue = -272</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-272</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.exhaustTemperature.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set exhaustTemperature.setpointsEnable = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.exhaustTemperature.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set exhaustTemperature.rawValue = -274</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-274</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.DryPump_0.exhaustTemperature.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_DryPump.DryPump_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set xSTATUS01_NORMAL = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_DryPump.xSTATUS01_NORMAL</Entry>
+          </Configuration>
+        </Action>
+      </Actions>
+    </TestCase>
+  </Sequence>
+</TestScript>

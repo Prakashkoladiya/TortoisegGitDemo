@@ -1,0 +1,2694 @@
+<TestScript>
+  <Information>
+    <Name>Booster - Unit Test Script</Name>
+    <Version>0.1</Version>
+    <Title>Booster - Unit Test Script</Title>
+    <Author>Gecia</Author>
+  </Information>
+  <Sequence>
+    <TestCase definesScope="False">
+      <Information>
+        <Title>Check - run Command and speedSetpoint_hz</Title>
+      </Information>
+      <Actions>
+        <Action>
+          <Information>
+            <Title>Set SystemConfig.xBoosterFitted = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application.SystemConfig.xBoosterFitted</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set xSTATUS01_IN_CONTROL_MODE_13 = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.xSTATUS01_IN_CONTROL_MODE_13</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set runCommand = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.runCommand</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check owCOMMNAD01 = 2</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">2</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.MBinverter.owCOMMNAD01</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set xSTATUS01_NORMAL = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.xSTATUS01_NORMAL</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check running = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.running</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.running</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set runCommand = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.runCommand</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check owCOMMNAD01 = 1</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">1</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.MBinverter.owCOMMNAD01</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set xSTATUS01_NORMAL = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.xSTATUS01_NORMAL</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check owCOMMNAD01 = 0</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">0</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.MBinverter.owCOMMNAD01</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check running = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.running</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.running</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set speedSetpoint_Hz = 76.2939453</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">76.2939453</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.speedSetpoint_Hz</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check oQ15runSpeedSetting = 10000</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">10000</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.MBinverter.oQ15runSpeedSetting</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set speedSetpoint_Hz = 0</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">0</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.speedSetpoint_Hz</Entry>
+          </Configuration>
+        </Action>
+      </Actions>
+    </TestCase>
+    <TestCase definesScope="False">
+      <Information>
+        <Title>Check - Output warning ALARM And normal</Title>
+      </Information>
+      <Actions>
+        <Action>
+          <Information>
+            <Title>Set xSTATUS01_NORMAL = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.xSTATUS01_NORMAL</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set xSTATUS02_WARNING = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.xSTATUS02_WARNING</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set xSTATUS02_WARNING = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.xSTATUS02_WARNING</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set xSTATUS02_ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.xSTATUS02_ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set xSTATUS02_ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.xSTATUS02_ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set SystemConfig.xBoosterFitted = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application.SystemConfig.xBoosterFitted</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set temperature.rawValue = 1100</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">1100</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.temperature.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set temperature.setpointsEnable = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.temperature.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set temperature.rawValue = 900</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">900</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.temperature.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set temperature.setpointsEnable = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.temperature.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set temperature.rawValue = 1100</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">1100</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.temperature.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.rawValue = 1100</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">1100</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.endCoverTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.setpointsEnable = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.endCoverTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.rawValue = 900</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">900</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.endCoverTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.setpointsEnable = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.endCoverTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.rawValue = 1100</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">1100</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.endCoverTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set motorTemp.rawValue = 1100</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">1100</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.motorTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set motorTemp.setpointsEnable = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.motorTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set motorTemp.rawValue = 900</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">900</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.motorTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set motorTemp.setpointsEnable = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.motorTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set motorTemp.rawValue = 1100</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">1100</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.motorTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set temperature.rawValue = -274</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-274</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.temperature.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set temperature.setpointsEnable = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.temperature.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set temperature.rawValue = -272</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-272</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.temperature.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set temperature.setpointsEnable = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.temperature.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set temperature.rawValue = -274</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-274</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.temperature.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.rawValue = -274</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-274</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.endCoverTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.setpointsEnable = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.endCoverTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.rawValue = -272</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-272</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.endCoverTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.setpointsEnable = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.endCoverTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set endCoverTemp.rawValue = -274</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-274</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.endCoverTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set motorTemp.rawValue = -274</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-274</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.motorTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set motorTemp.setpointsEnable = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.motorTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set motorTemp.rawValue = -272</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-272</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.motorTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set motorTemp.setpointsEnable = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.motorTemp.setpointsEnable</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set motorTemp.rawValue = -274</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">-274</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.Booster_0.motorTemp.rawValue</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">3000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check normal = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_Booster.Booster_0.normal</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set xSTATUS01_NORMAL = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_Booster.xSTATUS01_NORMAL</Entry>
+          </Configuration>
+        </Action>
+      </Actions>
+    </TestCase>
+  </Sequence>
+</TestScript>

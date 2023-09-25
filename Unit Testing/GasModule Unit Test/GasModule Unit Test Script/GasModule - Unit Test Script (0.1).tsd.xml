@@ -1,0 +1,3483 @@
+<TestScript>
+  <Information>
+    <Name>GasModule - Unit Test Script</Name>
+    <Version>0.1</Version>
+    <Title>GasModule - Unit Test Script</Title>
+    <Author>Gecia</Author>
+  </Information>
+  <Sequence>
+    <TestCase definesScope="False">
+      <Information>
+        <Title>GasModule - Unit Test</Title>
+      </Information>
+      <Actions>
+        <Action>
+          <Information>
+            <Title>Set inletPurgeCommand = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.inletPurgeCommand</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set bypassPurgeCommand = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.bypassPurgeCommand</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set sealPurgeCommand = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.sealPurgeCommand</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set exhPurgeCommand = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.exhPurgeCommand</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set valveFullPowerOverride = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.valveFullPowerOverride</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set enableFlowPresentOutput = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.enableFlowPresentOutput</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set highFlowWarningLevel_slm = 200</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">200</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.highFlowWarningLevel_slm</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set highFlowALARMlevel_slm = 250</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">250</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.highFlowALARMlevel_slm</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set lowFlowWarningLevel_slm = 40</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">40</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.lowFlowWarningLevel_slm</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set lowFlowALARMlevel_slm = 20</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">20</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.lowFlowALARMlevel_slm</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set highPCAtempALARMlevel_degC = 70</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">70</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.highPCAtempALARMlevel_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set highPCAtempWarnLevel_degC = 60</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">60</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.highPCAtempWarnLevel_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set highExhPressureWarnLevel_psig = 5</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">5</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.highExhPressureWarnLevel_psig</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set highExhPressureALARMlevel_psig = 8</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">8</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.highExhPressureALARMlevel_psig</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set aFirmwareVersion[1] = 66</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">66</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.aFirmwareVersion[1]</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set aFirmwareVersion[2] = 67</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">67</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.aFirmwareVersion[2]</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set aFirmwareVersion[3] = 68</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">68</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.aFirmwareVersion[3]</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set aFirmwareVersion[4] = 69</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">69</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.aFirmwareVersion[4]</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set aFirmwareVersion[5] = 70</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">70</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.aFirmwareVersion[5]</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set aFirmwareVersion[6] = 71</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">71</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.aFirmwareVersion[6]</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set aFirmwareVersion[7] = 72</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">72</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.aFirmwareVersion[7]</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set aFirmwareVersion[0] = 65</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">65</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.aFirmwareVersion[0]</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set aHardwareVersion[1] = 66</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">66</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.aHardwareVersion[1]</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set aHardwareVersion[2] = 67</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">67</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.aHardwareVersion[2]</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set aHardwareVersion[3] = 68</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">68</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.aHardwareVersion[3]</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set aHardwareVersion[4] = 69</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">69</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.aHardwareVersion[4]</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set aHardwareVersion[5] = 70</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">70</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.aHardwareVersion[5]</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set aHardwareVersion[6] = 71</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">71</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.aHardwareVersion[6]</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set aHardwareVersion[7] = 72</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">72</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.aHardwareVersion[7]</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set aHardwareVersion[0] = 65</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">65</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.aHardwareVersion[0]</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_extN2flowSwitchOK = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_extN2flowSwitchOK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_N2flowPresent = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_N2flowPresent</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_valveFullPowerActive = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_valveFullPowerActive</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_Valve_bypassPurge_xOpenPositionIndicator = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_Valve_bypassPurge_xOpenPositionIndicator</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_Valve_exhaustPurge_xOpenPositionIndicator= FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_Valve_exhaustPurge_xOpenPositionIndicator</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_Valve_inletPurge_xOpenPositionIndicator = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_Valve_inletPurge_xOpenPositionIndicator</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_Valve_shaftSealPuge_xOpenPositionIndicator = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_Valve_shaftSealPuge_xOpenPositionIndicator</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_wGasModuleStatus = 100</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">100</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_wGasModuleStatus</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_wExhaustPressure = 3</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">3</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_wExhaustPressure</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_wGasModuleType = 28677</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">28677</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_wGasModuleType</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_wPCBtemperature = 50</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">50</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_wPCBtemperature</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_wTotalFlow = 1000</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">1000</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_wTotalFlow</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check inletPurgeActive = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.inletPurgeActive</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check bypassPurgeActive = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.bypassPurgeActive</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check staticSealPurgeActive = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.staticSealPurgeActive</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check exhHighFlowActive = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.exhHighFlowActive</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check valveFullPowerActive = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.valveFullPowerActive</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check N2flowPresent = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.N2flowPresent</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check extN2flowSwitchOK = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.extN2flowSwitchOK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check totalFlow_slm = 100</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">100</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.totalFlow_slm</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check exhaustPressure_kPa = 0.3</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">0.3</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.exhaustPressure_kPa</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check exhaustPressure_psia = 0.0435114726</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">0.0435114726</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.exhaustPressure_psia</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check exhaustPressure_psig = -14.6524887</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">-14.6524887</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.exhaustPressure_psig</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check PCBtemperature_degC = 5</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">5</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.PCBtemperature_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highFlowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highFlowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highFlowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highFlowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowFlowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.lowFlowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowFlowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.lowFlowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highPCAtempWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highPCAtempWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highPCAtempALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highPCAtempALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highExhPressureWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highExhPressureWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highExhPressureALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highExhPressureALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check emergencyALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.emergencyALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check gasModuleType = "Varimode/High-flow + Inlet purge"</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">Varimode/High-flow + Inlet purge</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.gasModuleType</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check hardwareVersion = ABCDEFGH</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">ABCDEFGH</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.hardwareVersion<![CDATA[ ]]></Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check firmwareVersion = ABCDEFGH</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">ABCDEFGH</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.firmwareVersion</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set inletPurgeCommand = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.inletPurgeCommand</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set bypassPurgeCommand = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.bypassPurgeCommand</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set sealPurgeCommand = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.sealPurgeCommand</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set exhPurgeCommand = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.exhPurgeCommand</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check inletPurgeActive = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.inletPurgeActive</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check bypassPurgeActive = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.bypassPurgeActive</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check staticSealPurgeActive = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.staticSealPurgeActive</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check exhHighFlowActive = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.exhHighFlowActive</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set inletPurgeCommand = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.inletPurgeCommand</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set bypassPurgeCommand = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.bypassPurgeCommand</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set sealPurgeCommand = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.sealPurgeCommand</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set exhPurgeCommand = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">FALSE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.G4GasModule_0.exhPurgeCommand</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_extN2flowSwitchOK = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_extN2flowSwitchOK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_N2flowPresent = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_N2flowPresent</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_valveFullPowerActive = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_valveFullPowerActive</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_Valve_bypassPurge_xOpenPositionIndicator = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_Valve_bypassPurge_xOpenPositionIndicator</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_Valve_exhaustPurge_xOpenPositionIndicator= TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_Valve_exhaustPurge_xOpenPositionIndicator</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_Valve_inletPurge_xOpenPositionIndicator = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_Valve_inletPurge_xOpenPositionIndicator</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_Valve_shaftSealPuge_xOpenPositionIndicator = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">TRUE</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_Valve_shaftSealPuge_xOpenPositionIndicator</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check inletPurgeActive = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.inletPurgeActive</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check bypassPurgeActive = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.bypassPurgeActive</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check staticSealPurgeActive = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.staticSealPurgeActive</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check exhHighFlowActive = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.exhHighFlowActive</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check valveFullPowerActive = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.valveFullPowerActive</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check N2flowPresent = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.N2flowPresent</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check extN2flowSwitchOK = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.extN2flowSwitchOK</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_wExhaustPressure = 1500</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">1500</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_wExhaustPressure</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check exhaustPressure_kPa = 150</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">150</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.exhaustPressure_kPa</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check exhaustPressure_psia = 21.7557354</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">21.7557354</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.exhaustPressure_psia</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check exhaustPressure_psig = 7.0597353</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">7.0597353</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.exhaustPressure_psig</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highExhPressureWarning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highExhPressureWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highExhPressureALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highExhPressureALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check emergencyALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.emergencyALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_wExhaustPressure = 2000</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">2000</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_wExhaustPressure</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check exhaustPressure_kPa = 200</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">200</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.exhaustPressure_kPa</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check exhaustPressure_psia = 29.0076485</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">29.0076485</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.exhaustPressure_psia</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check exhaustPressure_psig = 14.3116484</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">14.3116484</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.exhaustPressure_psig</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highExhPressureWarning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highExhPressureWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highExhPressureALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highExhPressureALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check emergencyALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.emergencyALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_wExhaustPressure = 1000</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">1000</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_wExhaustPressure</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check exhaustPressure_kPa = 100</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">100</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.exhaustPressure_kPa</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check exhaustPressure_psia = 14.5038242</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">14.5038242</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.exhaustPressure_psia</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check exhaustPressure_psig = -0.192175865</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">-0.192175865</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.exhaustPressure_psig</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highExhPressureWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highExhPressureWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highExhPressureALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highExhPressureALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check emergencyALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.emergencyALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_wTotalFlow = 2100</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">2100</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_wTotalFlow</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check totalFlow_slm = 210</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">210</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.totalFlow_slm</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highFlowWarning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highFlowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highFlowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highFlowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowFlowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.lowFlowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowFlowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.lowFlowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check emergencyALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.emergencyALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_wTotalFlow = 2600</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">2600</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_wTotalFlow</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check totalFlow_slm = 260</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">260</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.totalFlow_slm</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highFlowWarning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highFlowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highFlowALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highFlowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowFlowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.lowFlowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowFlowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.lowFlowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check emergencyALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.emergencyALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_wTotalFlow = 390</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">390</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_wTotalFlow</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check totalFlow_slm = 39</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">39</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.totalFlow_slm</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highFlowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highFlowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highFlowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highFlowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowFlowWarning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.lowFlowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowFlowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.lowFlowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check emergencyALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.emergencyALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_wTotalFlow = 190</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">190</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_wTotalFlow</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check totalFlow_slm = 19</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">19</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.totalFlow_slm</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highFlowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highFlowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highFlowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highFlowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowFlowWarning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.lowFlowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowFlowALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.lowFlowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check emergencyALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.emergencyALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_wTotalFlow = 1500</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">1500</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_wTotalFlow</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check totalFlow_slm = 150</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">150</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.totalFlow_slm</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highFlowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highFlowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highFlowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highFlowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowFlowWarning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.lowFlowWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check lowFlowALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.lowFlowALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check emergencyALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.emergencyALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_wPCBtemperature = 610</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">610</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_wPCBtemperature</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check PCBtemperature_degC = 61</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">61</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.PCBtemperature_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highPCAtempWarning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highPCAtempWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highPCAtempALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highPCAtempALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check emergencyALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.emergencyALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Set Set_wPCBtemperature = 710</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="WriteVariable" />
+          <Configuration>
+            <Entry Name="WriteValue">710</Entry>
+            <Entry Name="WriteVariable">Device.Application._TEST_GasModule.Set_wPCBtemperature</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check PCBtemperature_degC = 71</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">71</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.PCBtemperature_degC</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highPCAtempWarning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highPCAtempWarning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check highPCAtempALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.highPCAtempALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check warning = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.warning</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check ALARM = TRUE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">TRUE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.ALARM</Entry>
+          </Configuration>
+        </Action>
+        <Action>
+          <Information>
+            <Title>Check emergencyALARM = FALSE</Title>
+          </Information>
+          <Settings>
+            <Entry Name="Condition" />
+            <Entry Name="ExecutionDelay">0</Entry>
+            <Entry Name="ForceEvaluation">False</Entry>
+            <Entry Name="IgnoreResults">False</Entry>
+            <Entry Name="ResultVariable" />
+            <Entry Name="RetryOnError">0|0</Entry>
+          </Settings>
+          <Command TestRunner="TestManager.Monitoring" Verb="CompareVariable" />
+          <Configuration>
+            <Entry Name="CompareTimeout">2000</Entry>
+            <Entry Name="CompareType">=</Entry>
+            <Entry Name="CompareValue">FALSE</Entry>
+            <Entry Name="CompareVariable">Device.Application._TEST_GasModule.G4GasModule_0.emergencyALARM</Entry>
+          </Configuration>
+        </Action>
+      </Actions>
+    </TestCase>
+  </Sequence>
+</TestScript>

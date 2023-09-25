@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8' />
+<title>Report - EdwardsInverter - Unit Test Script (0.1)</title>
+			<style type="text/css">
+				body { font-family: Arial; font-size: x-small; }
+				input { font-size: x-small; margin: 0.25em 0px; }
+				h2 { text-align: center; font-size: 120%; }
+				h3 { font-size: 110%; text-decoration: underline; }
+				table { font-size: 1em; margin: 0px; padding: 0px 0px 0px 1em; border-collapse: collapse; }
+				table tr { font-size: 1em; margin: 0px; padding: 0px 0px 0px 1em; vertical-align: top; }
+				table.listing,table.listing tr,table.listing td,table.listing th { border: solid 1px; padding: 2px; marging: 2px; border-color: gray; }
+				ul { margin : 0; list-style-type: disc; }
+				.failed { color: red; font-style: normal; font-weight: bold; }
+				.err_ignored { color: orange; font-style: normal; font-weight: bold; }
+				.succeeded { color: green; font-style: normal; font-weight: bold; }
+				.commented_out { color: darkgray; font-style: italic; font-weight: bold; }
+				.commented_out_li { color: darkkhaki; font-style: italic; }
+				dl { margin : 0; }
+				dt { float: left; clear: left; font-weight: bold; padding-right: 0.5em; } 
+				dt:after { content: ":"; } 
+				dd { margin: 0; padding: 0; }	
+				div { font-size: x-small; }
+				.code_assignment { font-family:'Consolas', 'Lucida Console', 'Courier New', monospace; color: black;}
+				.code_params { font-family:'Consolas', 'Lucida Console', 'Courier New', monospace; color: black;}
+				.code_literal { font-family:'Consolas', 'Lucida Console', 'Courier New', monospace; color: brown;}
+				@media print {
+					input { display: none; }
+				}
+			</style>
+<script type='text/javascript'>/* <![CDATA[ */ var CODESYS = CODESYS || {};
+CODESYS.TestManager = function () {
+	function q(a, b) {
+		var c, d;
+		d = [];
+		for (c = 0; c < a.length; c += 1) b(a[c]) && d.push(a[c]);
+		return d
+	}
+
+	function k(a, b) {
+		var c;
+		for (c = 0; c < a.length; c += 1) b(a[c])
+	}
+
+	function C(a, b) {
+		a.parentNode.replaceChild(b, a);
+		b.appendChild(a)
+	}
+
+	function D(a, b) {
+		return q(a.childNodes, function (a) {
+			return a.className === b
+		})
+	}
+
+	function u(a, b, c) {
+		c || (c = []);
+		a.nodeType === h && a.className === b && c.push(a);
+		(a = a.childNodes) && k(a, function (a) {
+			u(a, b, c)
+		});
+		return c
+	}
+
+	function v(a) {
+		if (!a || a.nodeType !== h) return !1;
+		a = a.nodeName.toLowerCase();
+		return "ul" === a || "ol" === a || "li" === a
+	}
+
+	function E(a) {
+		do a = a.nextSibling; while (a && !v(a));
+		return a
+	}
+
+	function F(a) {
+		var b = [];
+		a && a.hasChildNodes && (b = q(a.childNodes, v));
+		return b
+	}
+
+	function l(a, b) {
+		var c;
+		b || (b = function (a) {
+			return "none" === a.style.display
+		});
+		c = D(a.parentNode, m);
+		0 < c.length && (c = c[0], b(c) ? (c.style.display = "", a.innerHTML = n) : (c.style.display = "none", a.innerHTML = w));
+		return !1
+	}
+
+	function p(a, b) {
+		var c;
+		c = a.childNodes;
+		0 < c.length && k(c, function (a) {
+			p(a, b)
+		});
+		a.className === f && l(a.firstChild, b)
+	}
+
+	function x(a) {
+		var b;
+		a.className === f && l(a.firstChild, r);
+		(b = a.parentNode) && b.nodeType === h && "body" !== b.tagName.toLowerCase() && x(a.parentNode)
+	}
+
+	function G(a) {
+		var b = a.childNodes;
+		for (a = 0; a < b.length; a++)
+			if ("span" === b[a].nodeName.toLowerCase() && b[a].id === y) return b[a];
+		return null
+	}
+
+	function z(a) {
+		var b, c;
+		b = F(a);
+		0 < b.length && (k(b, z), "li" === a.nodeName.toLowerCase() && (a.className === f ? b = a.firstChild : (a.className = f, b = document.createElement("span"), b.className = m, c = E(a.firstChild), C(c, b), b = document.createElement("a"), b.href = "", b.style.textDecoration = "none", c = document.createTextNode(n), b.appendChild(c), a.insertBefore(b, a.firstChild)), b.onclick = function () {
+			return l(this)
+		}));
+		if (b = G(a)) a.className === f ? b = a.firstChild : (a.className = f, b.className = m, b = document.createElement("a"), b.href = "", b.style.textDecoration = "none", c = document.createTextNode(n), b.appendChild(c), a.insertBefore(b, a.firstChild)), b.onclick = function () {
+			return l(this)
+		}
+	}
+
+	function H(a) {
+		a = u(a, A);
+		a = q(a, function (a) {
+			var c;
+			try {
+				c = a.parentNode.className === B
+			} catch (d) {
+				c = !1
+			}
+			return !c
+		});
+		k(a, x)
+	}
+	
+	function intiallyHideParams() {
+		var vars = document.querySelectorAll('.code_params'), i;
+		for (var i = 0; i < vars.length; i++) {
+			vars[i].style.display = 'none';
+		}
+	}	
+	
+	var e, n, w, f, m, A, B, h, r, t, g, y, v;
+	n = "[-] ";
+	w = "[+] ";
+	f = "collapsableListEntry";
+	m = "collapsableContent";
+	A = "failed";
+	B = "TestAction";
+	h = 1;
+	r = function () {
+		return !0
+	};
+	t = function () {
+		return !1
+	};
+	y = "additionalInformation";
+	return {
+		collapseAll: function () {
+			p(e, t)
+		},
+		expandAll: function () {
+			p(e, r)
+		},
+		collapseSucceeded: function () {
+			p(e, t);
+			H(e)
+		},
+		showDiv: function () {
+			var a = g;
+			"div" === a.nodeName.toLowerCase() && (a.style.display = "flex")
+		},
+		hideDiv: function () {
+			var a = g;
+			"div" === a.nodeName.toLowerCase() && (a.style.display = "none")
+		},
+		showParams: function () {
+			var vars = document.querySelectorAll('.code_params'), i;
+			for (var i = 0; i < vars.length; i++) {
+				vars[i].style.display = '';
+			}
+		},
+		hideParams: function () {
+			var vars = document.querySelectorAll('.code_params'), i;
+			for (var i = 0; i < vars.length; i++) {
+				vars[i].style.display = 'none';
+			}
+		},
+		init: function () {
+			var a;
+			a = document.getElementById("expandCollapseButtons");
+			e = a.nextSibling;
+			3 === e.nodeType && (e = e.nextSibling);
+			z(e);
+			a.style.display = "";
+			if (a = document.getElementById("versionTableButtons")) g = a.nextSibling, 3 === g.nodeType && (g = g.nextSibling), a.style.display = "";
+			a = window.location.href;
+			if (window.location.hash) {
+				var b = a.lastIndexOf("#");
+				a = a.substring(0, b)
+			}
+			if (b = document.getElementById("GlobalAnchors"))
+				for (var c = b.childNodes, d = 0; d < c.length; d += 1) c[d].nodeType === h && "a" === c[d].nodeName.toLowerCase() && (b = c[d].href.lastIndexOf("#"), -1 < b && (c[d].href = a + c[d].href.substring(b)))
+			intiallyHideParams();
+		}
+	}
+}();
+window.onload = CODESYS.TestManager.init; /* ]]> */</script>
+</head>
+<body>
+<p id="GlobalAnchors"><a href="#Summary">Summary</a>&nbsp;&nbsp;<a href="#Details">Details</a></p>
+<h2>Overview</h2>
+<div style="width:100%; margin:5px;">
+<table border="0"><colgroup><col style="font-weight:bold;" /><col /></colgroup><tr><td>Date</td><td>9/14/2023 5:25 PM</td></tr><tr><td>Script</td><td>EdwardsInverter - Unit Test Script (0.1)</td></tr><tr><td>Tester</td><td>a00565074</td></tr><tr><td>Test settings:</td><td>Verbose; </td></tr></table></div><h2 id="Summary">Summary</h2>
+<table border="0" style="width:100%;"><tr><td style="margin:0px; padding:0px; width:100%;background-color:#00FF00;">&nbsp;</td><!-- 0 --><!-- 0 --></tr></table><div style="width:100%; margin:5px; display:flex; justify-content:center;">
+<table style="width:100%" border="0"><colgroup><col style="font-weight:bold;width:10%;padding-right:5px;" /><col /></colgroup><tr><td>Total test cases</td><td>41</td></tr><tr><td>Succeeded</td><td>41</td></tr><tr><td>Failed</td><td>0</td></tr><tr><td>Skipped</td><td>0</td></tr><table style="width:100%" border="0"><colgroup><col style="font-weight:bold;width:10%;padding-right:5px;" /><col /></colgroup><tr><td>Execution time</td><td>00:00:16.1166525</td></tr><tr><td>Pinned scripts</td><td>0/1</td></tr></table></div><h2 id="VersionInformation">Version information</h2>
+<span id="versionTableButtons" style="display:none">
+<input type="button" onclick="CODESYS.TestManager.showDiv();return false;" value="Show" />
+<input type="button" onclick="CODESYS.TestManager.hideDiv();return false;" value="Hide" />
+</span>
+<div style="display:none; justify-content:center">
+<div style="width:100%;margin:5px;">
+<table border="1" style="width:100%">
+<colgroup span="2"><col style="width:80%" /><col /></colgroup>
+<tr><th>Effektiv aufgerufene Skripte</th><th>Version</th><th>Pinned</th></tr>
+<tr>
+<td>EdwardsInverter - Unit Test Script</td><td>0.1</td><td></td></tr>
+</table>
+</div>
+</div>
+<h2 id="Details">Details</h2>
+<span id="expandCollapseButtons" style="display:none">
+<input type="button" onclick="CODESYS.TestManager.collapseAll();return false;" value="Collapse all" />
+<input type="button" onclick="CODESYS.TestManager.collapseSucceeded();return false;" value="Collapse succeeded" />
+<input type="button" onclick="CODESYS.TestManager.expandAll();return false;" value="Expand all" />
+<input type="button" onclick="CODESYS.TestManager.showParams();return false;" value="Show parameters" />
+<input type="button" onclick="CODESYS.TestManager.hideParams();return false;" value="Hide parameters" />
+</span>
+<ul>
+<li class="">EdwardsInverter - Unit Test Script [0.1]  - <em class="succeeded">Succeeded</em><ol>
+<li class="">Check - Start and Stop Command - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set startCommand = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check owCOMMNAD01 = 2 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set startCommand = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_NORMAL = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check owCOMMNAD01 = 0 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check normal = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set stopCommand = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check owCOMMNAD01 = 1 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set stopCommand = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_NORMAL = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check owCOMMNAD01 = 0 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check normal = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set startCommand = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check owCOMMNAD01 = 2 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set startCommand = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_ACCEL = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check owCOMMNAD01 = 0 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check accelerating  = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_ACCEL = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check accelerating  = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_NORMAL = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check normal = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set stopCommand = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check owCOMMNAD01 = 1 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set stopCommand = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_DECEL = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check owCOMMNAD01 = 0 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check decelerating = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_DECEL = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check decelerating = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_NORMAL = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check normal = FALSE - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - Request and Release Control - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set requestControl = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check owCOMMNAD01 = 16#00D - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set requestControl = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set releaseControl = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check owCOMMNAD01 = 0 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set releaseControl = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set requestControl = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check owCOMMNAD01 = 16#00D - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set requestControl = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_IN_CONTROL_MODE_13 = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check owCOMMNAD01 = 0 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_IN_CONTROL_MODE_13 = FALSE - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - inControl - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set xSTATUS01_IN_CONTROL_MODE_13 = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check inControl = inverterCtlMode.MODBUS - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_IN_CONTROL_MODE_13 = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_IN_CONTROL_MODE_7 = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check inControl = inverterCtlMode.Toggle_switch - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_IN_CONTROL_MODE_13 = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check inControl = inverterCtlMode.Momentary_switch - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_IN_CONTROL_MODE_7 = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_IN_CONTROL_MODE_6 = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check inControl = inverterCtlMode.USB - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_IN_CONTROL_MODE_13 = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check inControl = inverterCtlMode.Reserved4 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_IN_CONTROL_MODE_7 = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check inControl = inverterCtlMode.Reserved6 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_IN_CONTROL_MODE_13 = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check inControl = inverterCtlMode.Reserved7 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_IN_CONTROL_MODE_13 = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_IN_CONTROL_MODE_7 = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_IN_CONTROL_MODE_6 = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check inControl = inverterCtlMode.None - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - FSMstate - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set xSTATUS02_FSM0 = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS02_FSM2 = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check FSMstate = inverterFSMstate.RUNNING - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS02_FSM0 = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS02_FSM1 = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check FSMstate = inverterFSMstate.DECELERATING - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS02_FSM2 = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS02_FSM1 = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS02_FSM3 = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check FSMstate = inverterFSMstate.COASTING - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS02_FSM0 = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check FSMstate = inverterFSMstate.RESTART_DELAY - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS02_FSM3 = FALSE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS02_FSM0 = FALSE - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - standby - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set xSTATUS01_STANDBY = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check standby = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_STANDBY = FALSE - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - energySaving - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set xSTATUS01_ENERGY_SAVING_MODE_ACTIVE = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check energySaving = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS01_ENERGY_SAVING_MODE_ACTIVE = FALSE - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - warning - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set xSTATUS02_WARNING = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check warning = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS02_WARNING = FALSE - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - ALARM - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set xSTATUS02_ALARM = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check ALARM = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS02_ALARM = FALSE - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - leadDriveAlert - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set xSTATUS02_MASTER_ALERT = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check leadDriveAlert = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS02_MASTER_ALERT = FALSE - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - secondaryDriveAlert - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set xSTATUS02_MASTER_ALERT = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check secondaryDriveAlert = TRUE - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set xSTATUS02_MASTER_ALERT = FALSE - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - rotorSpeed_Hz - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15rotorSpeed = 10000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check rotorSpeed_Hz = 76.2939453 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15rotorSpeed = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - motorFrequency_Hz - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15motorFrequency = 10000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check motorFrequency_Hz = 76.2939453 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15motorFrequency = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - speedReference_Hz - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15speedReference = 10000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check speedReference_Hz = 76.2939453 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15speedReference = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - runSpeedDefault_Hz - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15runSpeedDefault = 10000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check runSpeedDefault_Hz = 76.2939453 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15runSpeedDefault = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - runSpeedMax_Hz - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15runSpeedMax = 10000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check runSpeedMax_Hz = 76.2939453 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15runSpeedMax = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - runSpeedMin_Hz - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15runSpeedMin = 10000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check runSpeedMin_Hz = 76.2939453 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15runSpeedMin = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - actualRunSpeedSetting_Hz - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15runSpeedSetting = 10000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check actualRunSpeedSetting_Hz = 76.2939453 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15runSpeedSetting = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - accelDemandDefault_Hz_s - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15accelDemandDefault = 10000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check accelDemandDefault_Hz_s = 76.2939453 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15accelDemandDefault = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - decelDemandMin_Hz_s - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15decelDemandMin = 10000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check decelDemandMin_Hz_s = 76.2939453 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15decelDemandMin = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - decelDemandMax_Hz_s - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15decelDemandMax = 10000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check decelDemandMax_Hz_s = 76.2939453 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15decelDemandMax = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - actualDecelDemand_Hz_s - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15decelDemandSetting = 10000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check actualDecelDemand_Hz_s = 76.2939453 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15decelDemandSetting = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - motorVoltage_V - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15motorVoltage = 20000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check motorVoltage_V = 305.175781 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15motorVoltage = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - motorCurrent_A - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15motorCurrent = 15000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check motorCurrent_A = 50.3540039 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15motorCurrent = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - motorPower_W - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15motorPower = 500 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check motorPower_W = 839.2334 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15motorPower = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - VccSupply_V - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15VccSupply = 20000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check VccSupply_V = 305.175781 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15VccSupply = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - linkVoltage_V - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15linkVoltage = 20000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check linkVoltage_V = 305.175781 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15linkVoltage = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - linkCurrent_A - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15linkCurrent = 15000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check linkCurrent_A = 50.3540039 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15linkCurrent = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - linkPower_W - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15linkPower = 500 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check linkPower_W = 839.2334 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15linkPower = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - motorTemperature_degC - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15motorTemperature = 10000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check motorTemperature_degC = 61.0351563 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15motorTemperature = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - sinkTemperature_degC - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15sinkTemperature = 10000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check sinkTemperature_degC = 61.0351563 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15sinkTemperature = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - controllerTemp_degC - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set Q15controllerTemperature = 10000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check controllerTemp_degC = 61.0351563 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set Q15controllerTemperature = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - poweredSeconds_s - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set wPoweredSeconds_UPPER = 500 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set wPoweredSeconds_LOWER = 1000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check poweredSeconds_s = 32769000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set wPoweredSeconds_UPPER = 0 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set wPoweredSeconds_LOWER = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - runSeconds_s - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set wRunSeconds_UPPER = 500 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set wRunSeconds_LOWER = 1000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check runSeconds_s = 32769000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set wRunSeconds_LOWER = 0 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set wRunSeconds_UPPER = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - elapsedSeconds_s - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set wElapsedSeconds_UPPER = 500 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set wElapsedSeconds_LOWER = 1000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check elapsedSeconds_s = 32769000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set wElapsedSeconds_UPPER = 0 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set wElapsedSeconds_LOWER = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - lifeRemaining_s - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set wLifeRemaining_UPPER = 500 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set wLifeRemaining_LOWER = 1000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check lifeRemaining_s = 32769000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set wLifeRemaining_UPPER = 0 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set wLifeRemaining_LOWER = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - pumpSystemName - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set aPumpSystemName[1] = 66 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aPumpSystemName[2] = 67 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aPumpSystemName[3] = 68 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aPumpSystemName[4] = 69 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aPumpSystemName[5] = 70 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aPumpSystemName[6] = 71 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aPumpSystemName[7] = 73 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aPumpSystemName[8] = 74 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aPumpSystemName[9] = 75 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aPumpSystemName[10] = 76 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aPumpSystemName[11] = 77 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aPumpSystemName[12] = 78 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aPumpSystemName[13] = 79 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aPumpSystemName[14] = 80 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aPumpSystemName[0] = 65 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check pumpSystemName = ABCDEFGIJKLMNOP - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - paramDrawing and paramInitials - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set aParamSetDwgRev[1] = 66 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aParamSetDwgRev[2] = 67 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aParamSetDwgRev[3] = 68 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aParamSetDwgRev[4] = 69 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aParamSetDwgRev[5] = 70 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aParamSetDwgRev[6] = 71 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aParamSetDwgRev[7] = 73 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aParamSetDwgRev[0] = 65 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aParamSetDwgRev[9] = 75 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aParamSetDwgRev[10] = 76 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aParamSetDwgRev[11] = 77 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aParamSetDwgRev[12] = 78 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aParamSetDwgRev[13] = 79 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aParamSetDwgRev[14] = 80 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aParamSetDwgRev[8] = 74 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check paramDrawing = ABCDEFGI - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check paramInitials = JKLMNOP - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - controlSoftware and controlSWdate - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set aSoftwareIdentity[1] = 66 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aSoftwareIdentity[2] = 67 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aSoftwareIdentity[3] = 68 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aSoftwareIdentity[4] = 69 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aSoftwareIdentity[5] = 70 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aSoftwareIdentity[6] = 71 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aSoftwareIdentity[7] = 73 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aSoftwareIdentity[0] = 65 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aSoftwareIdentity[9] = 75 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aSoftwareIdentity[10] = 76 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aSoftwareIdentity[11] = 77 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aSoftwareIdentity[12] = 78 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aSoftwareIdentity[13] = 79 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aSoftwareIdentity[14] = 80 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set aSoftwareIdentity[8] = 74 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check controlSoftware = ABCDEFGI - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check controlSWdate = JKLMNOP - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - oQ15runSpeedSetting - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set runSpeedSetting_Hz = 76.2939453 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check oQ15runSpeedSetting = 10000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set runSpeedSetting_Hz = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - oQ15accelDemandSetting - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set accelDemandSetting_Hz_s = 76.2939453 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check oQ15accelDemandSetting = 10000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set accelDemandSetting_Hz_s = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+<li class="">Check - oQ15decelDemandSetting - <em class="succeeded">Succeeded</em><ol>
+<li class="Test action ">Action: Set decelDemandSetting_Hz_s = 76.2939453 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Check oQ15decelDemandSetting = 10000 - <em class="succeeded">Succeeded</em></li>
+<li class="Test action ">Action: Set decelDemandSetting_Hz_s = 0 - <em class="succeeded">Succeeded</em></li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+</body>
+</html>
